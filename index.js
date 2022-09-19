@@ -11,6 +11,7 @@ let t = arr.sort(()=>Math.random()-0.5)
 function render() {
     for (let i = 0; i < t.length; i++) {
         let div = document.createElement("div")
+        div.classList.add("item")
         div.textContent = t[i]
         elList.appendChild(div)
     }
